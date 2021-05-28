@@ -1359,7 +1359,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return value.replace(re, '');
 	    },
 
-	    getPostDelimiter: function (value, delimiter, delimiters) {
+	    getPostDelimiter: function (value = '', delimiter, delimiters) {
 	        // single delimiter
 	        if (delimiters.length === 0) {
 	            return value.slice(-delimiter.length) === delimiter ? delimiter : '';
